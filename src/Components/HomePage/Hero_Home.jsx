@@ -8,7 +8,15 @@ import Dribbble from "../../../public/assets/Images/Vs.png";
 import Linkdin from "../../../public/assets/Images/In.png";
 import VerticleLine from "../../../public/assets/Images/Verticle Line.png";
 import MouseIcon from "../../../public/assets/Images/Mouse Icon.png";
+import localFont from "next/font/local";
 
+const LarkenDEMOFont = localFont({
+  src: [
+    {
+      path: "../../../public/assets/LarkenDEMO-Bold.otf",
+    },
+  ],
+});
 export default function HeroHome() {
   return (
     <section className="main h-screen ">
@@ -30,17 +38,19 @@ export default function HeroHome() {
       <div className="  px-4 overflow-hidden">
         <div className="xl:mt-20 2xl:mt-40 mt-80">
           <header data-aos="fade-up">
-            <h1 className="HeroSectionHeading uppercase md:text-center font-bold text-transparent text-white text-[43px] leading-[56px] md:leading-[72px] sm:text-6xl sm:leading-[64px] md:text-7xl 2xl:text-[96px] 2xl:leading-[100px] mb-10 LarkenDEMOFont">
-              <span className="md:mr-48">Consulting</span> <br />
-              <span className="gradient-text-style-1-style-2">
-                For Innovation
-              </span>{" "}
-              <div></div>
-              <span className="ml-16">Products</span> <br />{" "}
-              <span className="gradient-text-style-1-style-2 ml-16 md:mr-48">
-                for Growth
-              </span>
-            </h1>
+            <div className={LarkenDEMOFont.className}>
+              <h1 className="HeroSectionHeading uppercase md:text-center font-bold text-transparent text-white text-[43px] leading-[56px] md:leading-[72px] sm:text-6xl sm:leading-[64px] md:text-7xl 2xl:text-[96px] 2xl:leading-[100px] mb-10 ">
+                <span className="md:mr-48">Consulting</span> <br />
+                <span className="gradient-text-style-1-style-2">
+                  For Innovation
+                </span>{" "}
+                <div></div>
+                <span className="ml-16">Products</span> <br />{" "}
+                <span className="gradient-text-style-1-style-2 ml-16 md:mr-48">
+                  for Growth
+                </span>
+              </h1>
+            </div>
             <p className="md:block hidden mt-3 sm:mt-10 text-2xl 2xl:text-[32px] 2xl:leading-[40px] font-poppins text-white text-center">
               Helping businesses go online and grow bigger <br /> with high-tech
               web technologies
