@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* My css Style  */
+/* Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* navbar start   */
+.navbar li {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 500 !important;
+}
+/* navbar end */
+/* Hero Section start */
+.margin-for-CONSULTING-text {
+  margin-left: -30% !important;
+}
+.margin-for-FORGROWTH-text {
+  margin-left: -19% !important;
+}
+.main {
+  width: 100%;
+  height: 100vh !important;
+}
+video {
+  position: absolute;
+  width: 100%;
+  height: 100vh !important;
+  object-fit: cover;
+  top: 0;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Hero Section end */
+/* font weight size start  */
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+.font-weight-700 {
+  font-weight: 700 !important;
+}
+.font-weight-400 {
+  font-weight: 400 !important;
+}
+/* font weight size end  */
+
+/* font family start  */
+.font-RobotoSlab {
+  font-family: "Roboto Slab", serif;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+/* Define the @font-face rule */
+@font-face {
+  font-family: "LarkenDEMO";
+  src: url("/assets/LarkenDEMO-Bold.otf") format("opentype");
+}
+
+/* Use the font in a class */
+.LarkenDEMOFont {
+  font-family: "LarkenDEMO", sans-serif;
+}
+
+/* font family end  */
+/* gradient text color start */
+.gradient-text-style-1 {
+  background-image: linear-gradient(to right, #1177ba, #0e1534);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-text-style-1-style-3 {
+  background-image: linear-gradient(to right, #dbf6ff, #87cfff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-text-style-1-style-2 {
+  background-image: linear-gradient(to right, #ffffff, #8f00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* gradient text color start */
+.shadowHero {
+  box-shadow: inset 0 2px 12px 0 rgba(0, 0, 0, 0.16) !important;
+}
+/* Gradient background color start */
+.bg-gradient-style-1 {
+  background-image: linear-gradient(to right, #1177ba, #0e1534);
+}
+.bg-gradient-style-1-style-2 {
+  background-image: linear-gradient(to right, #002741, #1177ba);
+}
+/* Gradient background color start */
+.custom-text {
+  /* #dbf6ff, #87cfff); */
+  /* background: linear-gradient(90deg, #6eb1de, #fefefe); */
+  background: linear-gradient(90deg, #87cfff, #ebfaff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.background- {
+  background-image: url("https://i.ibb.co/m46B6LY/Lines.png");
+  background-repeat: no-repeat;
+}
+.background-image-for-our-products {
+  background-image: url("https://i.ibb.co/RB74Tv6/Group1000003361.png");
+  background-repeat: no-repeat;
+  /* background-position: right top; */
+}
+@media screen and (min-width: 768px) {
+  .background-image-for-our-products {
+    background-image: url("https://i.ibb.co/RB74Tv6/Group1000003361.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+}
+/* our clients */
+.our-client-text {
+  background-position-y: 170px !important;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .our-client-text {
+    background-position-y: 110px !important;
+  }
+  .background- {
+    background-image: url("https://i.ibb.co/m46B6LY/Lines.png");
+  }
+  .content {
+    justify-content: end;
+    align-items: center;
+  }
+}
+/* about us */
+.about-us-text {
+  background-position-y: 120px !important;
+}
+@media screen and (max-width: 768px) {
+  .about-us-text {
+    background-position-y: 190px !important;
+  }
+}
+
+/* smooth scrolling  */
+html {
+  scroll-behavior: smooth;
+}
+/* our produtes hover  */
+/* styles/globals.css or your relevant CSS file */
+.group-hover\:rotate-90:hover {
+  transform: rotate(90deg);
+}
+.group-hover\:scale-110:hover {
+  transform: scale(1.1);
+}
